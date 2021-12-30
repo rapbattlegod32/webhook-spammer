@@ -14,7 +14,6 @@ discordwebhook = webhookinput
 time.sleep(0.1)
 print('[>>] What would you like to send to the webhook?')
 hookmessage = input('[>>] ') # Prompts you to enter a message e.g 'Hello', '@everyone', 'Nuked by youruser#0000'
-warning = input('[>>] Press enter to start') # When the enter key is pressed it starts the webhook
 
 start = time.time()
 data = {"content": hookmessage}

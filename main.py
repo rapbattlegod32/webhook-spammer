@@ -16,9 +16,13 @@ print('[>>] What would you like to send to the webhook?')
 hookmessage = input('[>>] ') # Prompts you to enter a message e.g 'Hello', '@everyone', 'Nuked by youruser#0000'
 warning = input('[>>] Press enter to start') # When the enter key is pressed it starts the webhook
 
+start = time.time()
 data = {"content": hookmessage}
 response = requests.post(discordwebhook, json=data)
 
-print(response.status_code)
+print(response.status_code ,'Content has been recieved')
+end = time.time()
 
-print(response.content)
+print(end - start) # Measures the time that it took.
+
+time.sleep(10000)

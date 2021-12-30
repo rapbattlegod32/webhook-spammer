@@ -17,4 +17,4 @@ hookmessage = input('[>>] ') # Prompts you to enter a message e.g 'Hello', '@eve
 warning = input('[>>] Press enter to start') # When the enter key is pressed it starts the webhook
 
 data = {"content": hookmessage}
-response = requests.post
+response = requests.post(discordwebhook, json=data)

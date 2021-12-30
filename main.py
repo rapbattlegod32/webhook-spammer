@@ -4,3 +4,5 @@ import time
 from dhooks import Webhook 
 import ctypes
 ctypes.windll.kernel32.SetConsoleTitleW("Webhook Spammer") # Sets console name
+
+hook = input("[>>] Enter your webhook: ") # Prompts you to enter a webhook

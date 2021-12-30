@@ -18,3 +18,7 @@ warning = input('[>>] Press enter to start') # When the enter key is pressed it 
 
 data = {"content": hookmessage}
 response = requests.post(discordwebhook, json=data)
+
+print(response.status_code)
+
+print(response.content)

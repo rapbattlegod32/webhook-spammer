@@ -25,7 +25,7 @@ for i in range(0,int(amountofmessages)):
 end = time.time()
 print('Completed in: ', end - start,"seconds") # Measures the time that it took.
 
-with open("spammode.json","r") as f:
+with open("datasent.json","r") as f:
     webhookdata = json.load(f)
 
 webhookdata[f"Webhook: "] = discordwebhook
@@ -34,12 +34,7 @@ webhookdata[f"Times Sent: "] = amountofmessages
 webhookdata[f"Time Took: "] = end - start ,"seconds"
 webhookdata[f"Status Code: "] = response.status_code
 
-with open("spammode.json","w") as f:
+with open("datasent.json","w") as f:
      json.dump(webhookdata,f,indent=4)
 
 time.sleep(10000)
-
-hookmessage = input('[>>] ') 
-data = {"content": hookmessage}
-response = requests.post(discordwebhook, json=data)
-print(response.status_code)

@@ -5,6 +5,5 @@
 2. open the folder
 3. open the python file
 4. and follow what it says!
-
-https://imgur.com/gG2K01K
-https://imgur.com/TDgdibZ
+![gG2K01K](https://user-images.githubusercontent.com/70163067/147841214-f570b7b2-0623-4451-a121-b7ed2a7d3165.png)
+![TDgdibZ](https://user-images.githubusercontent.com/70163067/147841216-1b4533ff-a7f6-4af6-b47f-3f3fa9ccffe6.png)

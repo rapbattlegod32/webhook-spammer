@@ -23,10 +23,9 @@ start = time.time()
 for i in range(0,int(amountofmessages)):
     data = {"content": hookmessage, "amount": amountofmessages}
     response = requests.post(discordwebhook, json=data)
-
-print(response.status_code ,'| Content has been recieved')
+    print(response.status_code)
 end = time.time()
-
 print('Completed in: ', end - start,"seconds") # Measures the time that it took.
+
 
 time.sleep(10000)
